@@ -1,0 +1,273 @@
+2021-06-03T19:16:22.610827-0400 Level 20  * Restarting with stat
+2021-06-03T19:16:27.400451-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:17:12.362378-0400 Level 20  * Restarting with stat
+2021-06-03T19:17:18.410368-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:17:23.354579-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:17:23] "[33mGET / HTTP/1.1[0m" 404 -
+2021-06-03T19:17:23.651201-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:17:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-06-03T19:17:33.586866-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:17:33] "[32mGET /subscribe HTTP/1.1[0m" 308 -
+2021-06-03T19:17:33.649879-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:17:33] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:17:33.693868-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 16, in index
+    return render_template("./templates/subscribe.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ./templates/subscribe.html
+2021-06-03T19:25:50.931872-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\admin\\controller.py', reloading
+2021-06-03T19:25:51.825807-0400 Level 20  * Restarting with stat
+2021-06-03T19:25:58.523758-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:26:08.169207-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\admin\\controller.py', reloading
+2021-06-03T19:26:08.927420-0400 Level 20  * Restarting with stat
+2021-06-03T19:26:15.669157-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:26:20.959043-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:26:20] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:26:21.021059-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 16, in index
+    return render_template("./templates/subscribe.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: ./templates/subscribe.html
+2021-06-03T19:27:00.176773-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
+2021-06-03T19:27:01.022759-0400 Level 20  * Restarting with stat
+2021-06-03T19:27:09.872250-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:27:10.264215-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:27:10] "GET /subscribe/ HTTP/1.1" 200 -
+2021-06-03T19:27:43.103963-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
+2021-06-03T19:27:43.908437-0400 Level 20  * Restarting with stat
+2021-06-03T19:27:50.594985-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:27:50.849452-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:27:50] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:27:50.865452-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 16, in index
+    return render_template("subscribe.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\templates\subscribe.html", line 2, in top-level template code
+    {{ form.csrf_token }} {{ form.email_sms.label }} {{ email_sms.name(size=20) }}
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-06-03T19:29:21.477585-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
+2021-06-03T19:29:22.199834-0400 Level 20  * Restarting with stat
+2021-06-03T19:29:27.501139-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:29:37.459508-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:29:37] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:29:37.472480-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 20, in index
+    return render_template("subscribe.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\templates\subscribe.html", line 2, in top-level template code
+    {{ form.csrf_token }} {{ form.email_sms.label }} {{ email_sms.name(size=20) }}
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2021-06-03T19:32:57.961340-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
+2021-06-03T19:32:58.831697-0400 Level 20  * Restarting with stat
+2021-06-03T19:33:06.072836-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:33:09.404796-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:33:09] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:33:09.449787-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 20, in index
+    return render_template("subscribe.html", form=form)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\templates\subscribe.html", line 2, in top-level template code
+    {{ form.csrf_token }} {{ form.email_sms.label }} {{ email_sms.name(size=20) }}
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'email_sms' is undefined
+2021-06-03T19:38:03.653347-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
+2021-06-03T19:38:04.473159-0400 Level 20  * Restarting with stat
+2021-06-03T19:38:09.242785-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-03T19:38:12.674381-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:38:12] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:38:12.692386-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 20, in index
+    return render_template("subscribe.html", form=form)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\templates\subscribe.html", line 2, in top-level template code
+    {{ form.csrf_token }} {{ form.email_sms.label }} {{ email_sms.name(size=20) }}
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 474, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'email_sms' is undefined
+2021-06-03T19:38:58.866811-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:38:58] "[35m[1mGET /subscribe/ HTTP/1.1[0m" 500 -
+2021-06-03T19:38:58.899792-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\controller.py", line 20, in index
+    return render_template("subscribe.html", form=form)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 150, in render_template
+    ctx.app,
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1304, in render
+    self.environment.handle_exception()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\subscribe\templates\subscribe.html", line 3, in top-level template code
+    form.email_sms.name(size=20) }}
+TypeError: 'str' object is not callable
+2021-06-03T19:39:22.180660-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:39:22] "GET /subscribe/ HTTP/1.1" 200 -
+2021-06-03T19:39:25.221209-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:39:25] "[33mPOST / HTTP/1.1[0m" 404 -
+2021-06-03T19:55:06.455906-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
+2021-06-03T19:55:07.229686-0400 Level 20  * Restarting with stat
