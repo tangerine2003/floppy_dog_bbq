@@ -13,7 +13,7 @@ class Subscription(FlaskForm):
 
 
 @subscribe.route("/subscribe")
-def index():
+def subscribe_to_alerts():
     form = Subscription()
     if form.validate_on_submit():
         return redirect("/success")
@@ -21,7 +21,7 @@ def index():
 
 
 @subscribe.route("/unsubscribe")
-def index():
+def unsubscribe_from_alerts():
     form = Subscription()
     if form.validate_on_submit():
         return redirect("/success")

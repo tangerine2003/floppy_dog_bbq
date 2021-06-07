@@ -271,3 +271,676 @@ TypeError: 'str' object is not callable
 2021-06-03T19:39:25.221209-0400 Level 20 127.0.0.1 - - [03/Jun/2021 19:39:25] "[33mPOST / HTTP/1.1[0m" 404 -
 2021-06-03T19:55:06.455906-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\subscribe\\controller.py', reloading
 2021-06-03T19:55:07.229686-0400 Level 20  * Restarting with stat
+2021-06-07T09:46:59.654875-0400 Level 20  * Restarting with stat
+2021-06-07T09:47:04.661905-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T09:47:39.773594-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:47:39] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-06-07T09:47:39.823594-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\home\controller.py", line 10, in index
+    return render_template("index.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-06-07T09:47:39.954129-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:47:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-06-07T09:47:56.378170-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:47:56] "[33mGET /subscriptions/subscribe HTTP/1.1[0m" 404 -
+2021-06-07T09:48:26.357758-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\__init__.py', reloading
+2021-06-07T09:48:32.108293-0400 Level 20  * Restarting with stat
+2021-06-07T09:48:37.401563-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T09:48:39.154299-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:48:39] "GET /subscriptions/subscribe HTTP/1.1" 200 -
+2021-06-07T09:48:44.071194-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:48:44] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2021-06-07T09:49:13.823914-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading
+2021-06-07T09:49:14.558880-0400 Level 20  * Restarting with stat
+2021-06-07T09:49:19.230680-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T09:49:25.979100-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:49:25] "[31m[1mPOST / HTTP/1.1[0m" 405 -
+2021-06-07T09:49:48.831094-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:49:48] "GET / HTTP/1.1" 200 -
+2021-06-07T09:49:48.922057-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:49:48] "GET /static/css/bootstrap.css HTTP/1.1" 200 -
+2021-06-07T09:49:48.965055-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:49:48] "GET /static/js/bootstrap.js HTTP/1.1" 200 -
+2021-06-07T09:50:24.214182-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:50:24] "GET / HTTP/1.1" 200 -
+2021-06-07T09:50:24.262168-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:50:24] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2021-06-07T09:50:24.272167-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:50:24] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2021-06-07T09:51:48.097601-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:51:48] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2021-06-07T09:51:48.256594-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:51:48] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 -
+2021-06-07T09:51:48.264596-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:51:48] "GET /static/js/bootstrap.js.map HTTP/1.1" 200 -
+2021-06-07T09:55:56.392289-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:55:56] "GET / HTTP/1.1" 200 -
+2021-06-07T09:55:56.449288-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:55:56] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-06-07T09:55:56.456289-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:55:56] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2021-06-07T09:55:56.461290-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:55:56] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2021-06-07T09:55:56.552295-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:55:56] "GET /static/js/bootstrap.js.map HTTP/1.1" 200 -
+2021-06-07T09:55:56.593291-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:55:56] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 -
+2021-06-07T09:56:43.563245-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:56:43] "GET / HTTP/1.1" 200 -
+2021-06-07T09:56:43.599244-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:56:43] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2021-06-07T09:56:43.619239-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:56:43] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2021-06-07T09:56:43.625238-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:56:43] "GET /static/css/main.css HTTP/1.1" 200 -
+2021-06-07T09:56:43.694238-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:56:43] "GET /static/js/bootstrap.js.map HTTP/1.1" 200 -
+2021-06-07T09:56:43.739238-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:56:43] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 -
+2021-06-07T09:57:42.986248-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:57:42] "GET / HTTP/1.1" 200 -
+2021-06-07T09:57:43.070247-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:57:43] "[36mGET /static/css/bootstrap.css HTTP/1.1[0m" 304 -
+2021-06-07T09:57:43.078280-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:57:43] "[36mGET /static/css/main.css HTTP/1.1[0m" 304 -
+2021-06-07T09:57:43.093249-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:57:43] "[36mGET /static/js/bootstrap.js HTTP/1.1[0m" 304 -
+2021-06-07T09:57:43.222248-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:57:43] "GET /static/js/bootstrap.js.map HTTP/1.1" 200 -
+2021-06-07T09:57:43.237247-0400 Level 20 127.0.0.1 - - [07/Jun/2021 09:57:43] "GET /static/css/bootstrap.css.map HTTP/1.1" 200 -
+2021-06-07T15:25:52.856324-0400 Level 20  * Restarting with stat
+2021-06-07T15:26:01.299719-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T15:26:05.912644-0400 Level 20 127.0.0.1 - - [07/Jun/2021 15:26:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-06-07T15:26:05.931648-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\home\controller.py", line 10, in index
+    return render_template("index.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-06-07T15:26:18.398129-0400 Level 20 127.0.0.1 - - [07/Jun/2021 15:26:18] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-06-07T15:26:18.428121-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\home\controller.py", line 10, in index
+    return render_template("index.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-06-07T15:26:20.094280-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading
+2021-06-07T15:26:20.757271-0400 Level 20  * Restarting with stat
+2021-06-07T15:26:26.466400-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T15:26:26.569397-0400 Level 20 127.0.0.1 - - [07/Jun/2021 15:26:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2021-06-07T15:26:26.595396-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\home\controller.py", line 10, in index
+    return render_template("index.html")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html
+2021-06-07T16:13:29.161895-0400 Level 20  * Restarting with stat
+2021-06-07T16:13:33.542537-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T16:13:42.645331-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET / HTTP/1.1" 200 -
+2021-06-07T16:13:42.704334-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/plugins/font-awesome/css/all.min.css HTTP/1.1" 200 -
+2021-06-07T16:13:42.736333-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1" 200 -
+2021-06-07T16:13:42.804867-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/plugins/flickity/flickity.min.css HTTP/1.1" 200 -
+2021-06-07T16:13:42.837870-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/css/theme.css HTTP/1.1" 200 -
+2021-06-07T16:13:42.905403-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/img/2.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:42.933409-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/img/7.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:42.963410-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:42] "GET /static/img/26.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.012958-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.024956-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/31.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.058955-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/parallax/parallax.min.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.089509-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.111507-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/isotope/isotope.pkgd.min.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.137056-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/flickity/flickity.pkgd.min.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.173207-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/lightbox/js/lightbox.min.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.208204-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/reservation/reservation.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.227364-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/alerts/alerts.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.237373-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/js/theme.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.257364-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/js/custom.js HTTP/1.1" 200 -
+2021-06-07T16:13:43.286372-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/27.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.309366-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/28.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.341367-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/29.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.377374-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/30.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.431364-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/20.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.444368-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/21.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.456366-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/22.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.471368-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/font-awesome/webfonts/fa-brands-400.woff2 HTTP/1.1" 200 -
+2021-06-07T16:13:43.491366-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/font-awesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+2021-06-07T16:13:43.498369-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/plugins/font-awesome/webfonts/fa-regular-400.woff2 HTTP/1.1" 200 -
+2021-06-07T16:13:43.539371-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/11.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.567365-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/16.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.581370-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/13.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.607366-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/15.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.624367-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/14.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.633369-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/18.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.671388-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/17.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.693369-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/12.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.744368-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/8.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.777365-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/9.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.803365-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/10.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.820368-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/19.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:43.895365-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:43] "GET /static/img/icon_plus.svg HTTP/1.1" 200 -
+2021-06-07T16:13:44.176367-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T16:13:44.199369-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T16:13:44.371365-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/img/icon_prev.svg HTTP/1.1" 200 -
+2021-06-07T16:13:44.391367-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/img/icon_next.svg HTTP/1.1" 200 -
+2021-06-07T16:13:44.435364-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/plugins/lightbox/images/loading.gif HTTP/1.1" 200 -
+2021-06-07T16:13:44.453366-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/img/icon_close.svg HTTP/1.1" 200 -
+2021-06-07T16:13:44.482366-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:44] "GET /static/img/1.jpg HTTP/1.1" 200 -
+2021-06-07T16:13:47.152808-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:47] "GET /static/ico/manifest.json HTTP/1.1" 200 -
+2021-06-07T16:13:47.179817-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:13:47] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T16:14:40.742659-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:40] "[33mGET /reservation.html HTTP/1.1[0m" 404 -
+2021-06-07T16:14:42.837306-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:42] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T16:14:42.841309-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:42] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T16:14:44.548995-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:44] "[36mGET /static/ico/manifest.json HTTP/1.1[0m" 304 -
+2021-06-07T16:14:46.043633-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:46] "[33mGET /menu.html HTTP/1.1[0m" 404 -
+2021-06-07T16:14:47.618445-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:47] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T16:14:47.624444-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:47] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T16:14:49.123310-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:14:49] "[36mGET /static/ico/manifest.json HTTP/1.1[0m" 304 -
+2021-06-07T16:15:39.674244-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading
+2021-06-07T16:15:40.410240-0400 Level 20  * Restarting with stat
+2021-06-07T16:15:45.927189-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T16:15:48.563966-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:15:48] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:15:52.046272-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:15:52] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:15:53.816409-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:15:53] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T16:15:53.827408-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:15:53] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T16:15:55.668641-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:15:55] "[36mGET /static/ico/manifest.json HTTP/1.1[0m" 304 -
+2021-06-07T16:15:58.158541-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:15:58] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:16:06.228168-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading
+2021-06-07T16:16:06.864129-0400 Level 20  * Restarting with stat
+2021-06-07T16:16:11.568236-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T16:16:13.937433-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:13] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:16:15.261429-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:15] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:16:15.997096-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:15] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:16:16.487109-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:16] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:16:16.919104-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:16] "[33mGET /about-us.html HTTP/1.1[0m" 404 -
+2021-06-07T16:16:33.870667-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading
+2021-06-07T16:16:34.580456-0400 Level 20  * Restarting with stat
+2021-06-07T16:16:40.119743-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T16:16:40.202743-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T16:16:40.314752-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.334742-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.348741-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/flickity/flickity.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.360743-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/css/theme.css HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.378747-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.395284-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.423819-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.478820-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.497837-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.515831-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.568417-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.583399-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.601939-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.621934-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.641485-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/img/2.jpg HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.664483-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/img/24.jpg HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.838560-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/ico/manifest.json HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.856558-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/ico/favicon.ico HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.923561-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/ico/favicon-32x32.png HTTP/1.1[0m" 404 -
+2021-06-07T16:16:40.964562-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:16:40] "[33mGET /assets/ico/favicon-16x16.png HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.569664-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T16:17:24.708613-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.732614-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.754611-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/flickity/flickity.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.773615-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/css/theme.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.787616-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.823613-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.866620-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.907622-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.934163-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.955162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:24.976161-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:24] "[33mGET /assets/img/24.jpg HTTP/1.1[0m" 404 -
+2021-06-07T16:17:25.003160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:25] "[33mGET /assets/img/2.jpg HTTP/1.1[0m" 404 -
+2021-06-07T16:17:25.032160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:25] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:25.050159-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:25] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:25.059164-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:25] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:25.077163-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:25] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:25.118157-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:25] "[33mGET /assets/ico/manifest.json HTTP/1.1[0m" 404 -
+2021-06-07T16:17:28.026400-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "GET / HTTP/1.1" 200 -
+2021-06-07T16:17:28.096395-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.127392-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.160395-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.179928-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.187930-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/2.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.218931-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/7.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.242928-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/26.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.266927-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.286976-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/parallax/parallax.min.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.306989-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.323991-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.343997-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.361989-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.376992-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/reservation/reservation.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.395995-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/alerts/alerts.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.414991-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.442992-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.451994-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/31.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.473991-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/27.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.493991-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/28.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.511001-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/29.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.530530-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/30.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.549526-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/20.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.567530-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/21.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.592523-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/22.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.602530-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/11.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.617530-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/16.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.634529-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/13.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.647527-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/15.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.667531-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/14.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.686525-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/18.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.702527-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/17.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.719527-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/12.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.737525-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/8.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.755524-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/9.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.779529-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/10.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.792526-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/19.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.820532-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/img/icon_plus.svg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.843529-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/font-awesome/webfonts/fa-brands-400.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.861533-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/font-awesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T16:17:28.876527-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:28] "[36mGET /static/plugins/font-awesome/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T16:17:29.052526-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T16:17:29.262226-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "[36mGET /static/img/icon_prev.svg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:29.289225-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "[36mGET /static/img/icon_next.svg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:29.298242-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "[36mGET /static/plugins/lightbox/images/loading.gif HTTP/1.1[0m" 304 -
+2021-06-07T16:17:29.322224-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "[36mGET /static/img/icon_close.svg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:29.346230-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T16:17:29.372232-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:29] "[36mGET /static/img/1.jpg HTTP/1.1[0m" 304 -
+2021-06-07T16:17:31.405223-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T16:17:31.445218-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[36mGET /static/ico/manifest.json HTTP/1.1[0m" 304 -
+2021-06-07T16:17:31.502226-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.520223-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.537221-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/flickity/flickity.min.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.559222-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/css/theme.css HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.580236-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.601225-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.646224-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.666785-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.713888-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.737874-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.776928-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.805665-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.826237-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/img/2.jpg HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.848333-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/img/24.jpg HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.861871-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.877942-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T16:17:31.936943-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:17:31] "[33mGET /assets/ico/manifest.json HTTP/1.1[0m" 404 -
+2021-06-07T16:23:00.934807-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:00] "GET / HTTP/1.1" 200 -
+2021-06-07T16:23:01.025352-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:01] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:01.077349-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:01] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:01.109353-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:01] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:01.127347-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:01] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:01.457634-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:01] "GET /static/ico/manifest.json HTTP/1.1" 200 -
+2021-06-07T16:23:55.836106-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:55] "GET / HTTP/1.1" 200 -
+2021-06-07T16:23:56.019105-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:56] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:56.063108-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:56] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:56.107106-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:56] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:56.146106-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:56] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T16:23:56.570831-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:56] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T16:23:56.599840-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:23:56] "[36mGET /static/ico/manifest.json HTTP/1.1[0m" 304 -
+2021-06-07T16:25:53.720593-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:53] "GET / HTTP/1.1" 200 -
+2021-06-07T16:25:53.866590-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:53] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:25:53.890592-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:53] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:25:53.913590-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:53] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:25:53.940591-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:53] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T16:25:54.166449-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:54] "[36mGET /static/ico/manifest.json HTTP/1.1[0m" 304 -
+2021-06-07T16:25:54.178924-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:25:54] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T16:26:51.347589-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:26:51] "GET / HTTP/1.1" 200 -
+2021-06-07T16:26:51.394588-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:26:51] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:26:51.409595-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:26:51] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:26:51.434590-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:26:51] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:26:51.455585-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:26:51] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T16:26:51.760588-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:26:51] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T16:35:20.724205-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:35:20] "GET / HTTP/1.1" 200 -
+2021-06-07T16:35:20.783845-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:35:20] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:35:20.801847-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:35:20] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:35:20.820379-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:35:20] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T16:35:20.950385-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:35:20] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T16:35:21.181212-0400 Level 20 127.0.0.1 - - [07/Jun/2021 16:35:21] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:28:34.249856-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:34] "GET / HTTP/1.1" 200 -
+2021-06-07T17:28:34.299823-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:34] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:34.314827-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:34] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:34.343824-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:34] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:34.349826-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:34] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:34.593438-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:34] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:28:57.878318-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:57] "GET / HTTP/1.1" 200 -
+2021-06-07T17:28:57.920829-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:57] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:57.935833-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:57] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:57.955834-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:57] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:57.969828-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:57] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:28:58.143830-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:28:58] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:29:19.559417-0400 Level 20  * Restarting with stat
+2021-06-07T17:29:23.727939-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T17:29:31.051953-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:31] "GET / HTTP/1.1" 200 -
+2021-06-07T17:29:31.096956-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:31] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:31.118956-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:31] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:31.128958-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:31] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:31.142959-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:31] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:31.384961-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:31] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:29:45.760150-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:45] "GET / HTTP/1.1" 200 -
+2021-06-07T17:29:45.883144-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:45] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:45.898145-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:45] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:45.919148-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:45] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:45.943146-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:45] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:29:46.130371-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:29:46] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:31:22.549335-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:31:22] "GET / HTTP/1.1" 200 -
+2021-06-07T17:31:22.652339-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:31:22] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:31:22.671342-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:31:22] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:31:22.693343-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:31:22] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:31:22.706353-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:31:22] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:31:22.946343-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:31:22] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:32:44.860111-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:44] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T17:32:44.959657-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:44] "[33mGET /assets/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 404 -
+2021-06-07T17:32:44.982657-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:44] "[33mGET /assets/plugins/flickity/flickity.min.css HTTP/1.1[0m" 404 -
+2021-06-07T17:32:44.998658-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:44] "[33mGET /assets/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.012658-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/css/theme.css HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.043661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.059657-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.083662-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.102659-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.118662-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.134666-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.176682-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/img/2.jpg HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.185661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/img/24.jpg HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.200665-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.224677-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.233245-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.251190-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.267729-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.293731-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.324729-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.355738-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.385736-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.417738-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.441726-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.466731-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.507729-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T17:32:45.570726-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:32:45] "[33mGET /assets/ico/manifest.json HTTP/1.1[0m" 404 -
+2021-06-07T17:34:26.323465-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:34:26] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T17:34:26.510462-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:34:26] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:34:26.544467-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:34:26] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:34:26.596008-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:34:26] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:34:26.614009-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:34:26] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:35:17.505650-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:35:17] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T17:35:17.547642-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:35:17] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:35:17.562644-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:35:17] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:35:17.579641-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:35:17] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:35:17.591642-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:35:17] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:35:17.782640-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:35:17] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:37:08.716158-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "GET / HTTP/1.1" 200 -
+2021-06-07T17:37:08.784160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.820160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.840179-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.862158-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.902158-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.919162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/plugins/parallax/parallax.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.952695-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:08.976695-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:08] "[36mGET /static/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.008241-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.017237-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.043246-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/plugins/reservation/reservation.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.061240-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/plugins/alerts/alerts.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.083065-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.110161-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/7.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.138173-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/2.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.145162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.184162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/26.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.194162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/31.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.216163-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/27.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.229162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/28.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.249162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/29.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.282164-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/30.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.309160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/20.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.316162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/21.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.338165-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/22.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.381167-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/11.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.389161-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/16.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.411161-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/13.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.440167-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/15.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.455163-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/14.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.469692-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/18.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.490697-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/17.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.506695-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/12.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.560817-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/8.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.573826-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/9.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.589817-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/10.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.621819-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/19.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.646819-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/plugins/font-awesome/webfonts/fa-brands-400.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.656817-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/plugins/font-awesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.671818-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "[36mGET /static/img/icon_plus.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:09.865819-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:09] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T17:37:10.130817-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:10] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T17:37:10.352819-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:10] "[36mGET /static/img/icon_prev.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:10.371819-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:10] "[36mGET /static/img/icon_next.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:10.405855-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:10] "[36mGET /static/plugins/lightbox/images/loading.gif HTTP/1.1[0m" 304 -
+2021-06-07T17:37:10.413817-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:10] "[36mGET /static/img/icon_close.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:37:10.439821-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:37:10] "[36mGET /static/img/1.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.585469-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "GET / HTTP/1.1" 200 -
+2021-06-07T17:38:53.715470-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.753474-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.784466-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.805476-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.830467-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.859473-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/parallax/parallax.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.884467-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.927466-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.944000-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.969083-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:53.985082-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:53] "[36mGET /static/plugins/reservation/reservation.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.006101-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/plugins/alerts/alerts.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.037083-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/js/theme.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.056081-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/plugins/font-awesome/webfonts/fa-brands-400.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.082083-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/plugins/font-awesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.088081-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/js/custom.js HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.111084-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/2.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.123093-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/7.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.158083-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/26.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.175089-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/31.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.209085-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/27.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.219084-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/28.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.248084-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/29.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.262084-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/30.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.287086-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/11.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.307083-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/16.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.327625-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T17:38:54.345619-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/13.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.358624-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/15.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.387626-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/14.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.408622-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/18.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.424623-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/17.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.441624-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/12.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.477626-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/19.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.521623-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/8.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.584160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/9.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.652167-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/10.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.662163-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/1.jpg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.707164-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/icon_plus.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.725169-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T17:38:54.753159-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/icon_prev.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.763162-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/icon_next.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.794161-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/plugins/lightbox/images/loading.gif HTTP/1.1[0m" 304 -
+2021-06-07T17:38:54.830157-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:54] "[36mGET /static/img/icon_close.svg HTTP/1.1[0m" 304 -
+2021-06-07T17:38:55.572160-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:38:55] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:39:23.325569-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:23] "[33mGET /contact-us.html HTTP/1.1[0m" 404 -
+2021-06-07T17:39:25.755250-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:25] "GET /static/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+2021-06-07T17:39:25.759248-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:25] "GET /static/plugins/lightbox/js/lightbox.min.map HTTP/1.1" 200 -
+2021-06-07T17:39:27.444864-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:27] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T17:39:27.510867-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:27] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:27.545864-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:27] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:27.566867-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:27] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:27.605867-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:27] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:38.602520-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T17:39:38.653580-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:38.696576-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:38.714577-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:38.730579-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:39:38.752112-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.786112-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.826116-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.840136-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.857112-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.872136-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.896178-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.919184-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[36mGET /static/plugins/font-awesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:39:38.934178-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/img/2.jpg HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.961181-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:38.981181-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:38] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:39.008181-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:39] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T17:39:39.028180-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:39] "[33mGET /assets/img/24.jpg HTTP/1.1[0m" 404 -
+2021-06-07T17:39:39.083183-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:39] "[36mGET /static/plugins/font-awesome/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:39:39.260175-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:39:39] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:40:06.623665-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "GET /about-us HTTP/1.1" 200 -
+2021-06-07T17:40:06.737663-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[36mGET /static/plugins/font-awesome/css/all.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:40:06.749666-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[36mGET /static/plugins/lightbox/css/lightbox.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:40:06.774662-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[36mGET /static/plugins/flickity/flickity.min.css HTTP/1.1[0m" 304 -
+2021-06-07T17:40:06.791668-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[36mGET /static/css/theme.css HTTP/1.1[0m" 304 -
+2021-06-07T17:40:06.816665-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.834666-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.853665-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.883661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.900666-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.924664-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.939663-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.960662-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:06.981661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:06] "[36mGET /static/plugins/font-awesome/webfonts/fa-solid-900.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:40:07.002663-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[36mGET /static/plugins/font-awesome/webfonts/fa-regular-400.woff2 HTTP/1.1[0m" 304 -
+2021-06-07T17:40:07.026666-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/img/2.jpg HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.063661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.073683-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.094664-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/img/24.jpg HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.111666-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.245661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/parallax/parallax.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.268661-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/isotope/lib/imagesloaded.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.294659-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/isotope/isotope.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.313290-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/flickity/flickity.pkgd.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.331290-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/lightbox/js/lightbox.min.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.353294-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/reservation/reservation.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.380291-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/plugins/alerts/alerts.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.402287-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/js/theme.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.424292-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "[33mGET /assets/js/custom.js HTTP/1.1[0m" 404 -
+2021-06-07T17:40:07.495288-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:07] "GET /static/ico/favicon.ico HTTP/1.1" 200 -
+2021-06-07T17:40:18.918952-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:40:18] "[33mGET /contact-us.html HTTP/1.1[0m" 404 -
+2021-06-07T17:41:15.017771-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading
+2021-06-07T17:41:15.659771-0400 Level 20  * Restarting with stat
+2021-06-07T17:41:19.942005-0400 Level 20  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-06-07T17:41:20.277970-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:41:20] "[33mGET /contact-us.html HTTP/1.1[0m" 404 -
+2021-06-07T17:41:24.379753-0400 Level 20 127.0.0.1 - - [07/Jun/2021 17:41:24] "[35m[1mGET /contact-us HTTP/1.1[0m" 500 -
+2021-06-07T17:41:24.391765-0400 Level 40 Error on request:
+Traceback (most recent call last):
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 319, in run_wsgi
+    execute(self.server.app)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\werkzeug\serving.py", line 308, in execute
+    application_iter = app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2088, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.handle_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 2070, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1515, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1513, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\app.py", line 1499, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\sav-chrisc\projects\floppy_dog_flask\app\home\controller.py", line 20, in contact_us
+    return render_template("contact-us")
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 148, in render_template
+    ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 1068, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 997, in get_template
+    return self._load_template(name, globals)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\environment.py", line 958, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 59, in get_source
+    return self._get_source_fast(environment, template)
+  File "c:\Users\sav-chrisc\projects\floppy_dog_flask\venv\lib\site-packages\flask\templating.py", line 95, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: contact-us
+2021-06-07T17:41:33.813812-0400 Level 20  * Detected change in 'C:\\Users\\sav-chrisc\\projects\\floppy_dog_flask\\app\\home\\controller.py', reloading

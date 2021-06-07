@@ -1,23 +1,68 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Floppy Dog BBQ</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarNavAltMarkup"
-    aria-controls="navbarNavAltMarkup"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-item nav-link active" href="#"
-        >Home <span class="sr-only">(current)</span></a
-      >
-      <a class="nav-item nav-link" href="#">Subcribe</a>
-      <a class="nav-item nav-link" href="#">Yadayada</a>
+<!-- NAVBAR
+	================================================== -->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Navbar: Brand -->
+    <a class="navbar-brand d-lg-none" href="/">Floppy Dog BBQ</a>
+
+    <!-- Navbar: Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar: Collapse -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar navigation: Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="about-us">About Us</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="http://example.com"
+            id="nav-item__menu"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Menu
+          </a>
+          <div class="dropdown-menu" aria-labelledby="nav-item__menu">
+            <a class="dropdown-item" href="menu.html">Menu: Standard</a>
+            <a class="dropdown-item" href="menu_no-images.html"
+              >Menu: No Images</a
+            >
+          </div>
+        </li>
+      </ul>
+
+      <!-- Navbar: Brand -->
+      <a class="navbar-brand d-none d-lg-flex" href="/"> Floppy Dog BBQ </a>
+
+      <!-- Navbar navigation: Right -->
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="news-and-events.html">News & Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact-us">Contact</a>
+        </li>
+      </ul>
     </div>
+    <!-- / .navbar-collapse -->
   </div>
+  <!-- / .container -->
 </nav>
+<!-- / .navbar -->

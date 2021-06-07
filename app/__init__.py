@@ -1,5 +1,6 @@
 from flask import Flask
 from .subscribe.controller import subscribe
+from .home.controller import home
 
 """ from .admin.routes import admin
 from .api.routes import api
@@ -44,7 +45,7 @@ def create_app():
     migrate.init_app(app)
 
     with app.app_context():
-        app.register_blueprint(subscribe, url_prefix="/subscribe")
+        app.register_blueprint(subscribe, url_prefix="/subscriptions")
+        app.register_blueprint(home)
         # app.register_blueprint(api, url_prefix="/api")
-        # app.register_blueprint(website)
     return app

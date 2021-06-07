@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, url_for
 
-admin = Blueprint("admin", __name__, template_folder=".templates")
+admin = Blueprint("admin", __name__)
 
 
 @admin.route("/sitemap")
