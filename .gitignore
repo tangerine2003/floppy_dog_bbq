@@ -2,3 +2,5 @@
 config.py
 /app/static/touche/node_modules
 /logs
+
+/node_modules
