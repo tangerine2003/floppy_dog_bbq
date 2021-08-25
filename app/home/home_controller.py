@@ -1,8 +1,9 @@
 # from app import home
-from flask import Blueprint, render_template, redirect
+from flask import Blueprint, render_template, redirect, request
 from flask_wtf import FlaskForm
 from wtforms import StringField
 from wtforms.validators import DataRequired
+from app.home.services import email
 
 
 home = Blueprint("home", __name__, template_folder="./templates")
@@ -22,8 +23,12 @@ def about():
     return render_template("about-us.html")
 
 
-@home.route("/contact-us")
+@home.route("/contact-us", methods=["GET", "POST"])
 def contact_us():
+
+    if request.method == "POST":
+        email.send_email()
+
     return render_template("contact-us.html")
 
 

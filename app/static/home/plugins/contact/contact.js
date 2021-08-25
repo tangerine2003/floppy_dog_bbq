@@ -4,19 +4,19 @@
 
 "use strict";
 
-var contact = (function() {
+var contact = (function () {
 
 	// Variables
-	var form =			$('#contact__form');
-	var formName = 		$('#contact__form__name');
-	var formEmail = 	$('#contact__form__email');
-	var formMessage = 	$('#contact__form__message');
-	var formSubmit = 	form.find('[type="submit"]');
-	var formActionUrl = 'assets/plugins/contact/contact.php';
+	var form = $('#contact_form');
+	var formName = $('#contact_form_name');
+	var formEmail = $('#contact_form_email');
+	var formPhone = $('#contact_form_phone');
+	var formMessage = $('#contact_form_message');
+	var formSubmit = form.find('[type="submit"]');
+	var formActionUrl = '/contact-us';
 
 	// Methods
 	function submitForm($this) {
-
 		$.ajax({
 			url: formActionUrl,
 			type: 'POST',
@@ -32,7 +32,7 @@ var contact = (function() {
 				form.find('.invalid-feedback').html('');
 
 			},
-			success: function( json, textStatus ) {
+			success: function (json, textStatus) {
 
 				// Enable submit button
 				formSubmit.prop('disabled', false);
@@ -42,22 +42,25 @@ var contact = (function() {
 					elem.next('.invalid-feedback').html(message);
 				}
 
-				if( json.error ) {
+				if (json.error) {
 
 					// Proceed error messages
-					if ( json.error.name ) {
+					if (json.error.name) {
 						showError(formName, json.error.name);
 					}
-					if ( json.error.email ) {
+					if (json.error.email) {
 						showError(formEmail, json.error.email);
 					}
-					if ( json.error.message ) {
+					if (json.error.phone) {
+						showError(formPhone, json.error.phone);
+					}
+					if (json.error.message) {
 						showError(formMessage, json.error.message);
 					}
 				}
 
 				// Proceed success message
-				if( json.success ) {
+				if (json.success) {
 
 					// Show alert message
 					$(document).trigger('touche.alert.show', ['success', json.success]);
@@ -71,8 +74,8 @@ var contact = (function() {
 	}
 
 	// Process form
-	form.on('submit', function() {
-		submitForm( $(this) );
+	form.on('submit', function () {
+		submitForm($(this));
 		return false;
 	});
 
